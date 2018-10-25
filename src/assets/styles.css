@@ -1,0 +1,28 @@
+.header {
+  z-index: 1;
+  height: 75px;
+  background: grey;
+}
+
+.sidebar {
+  background-color: #aaffee;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  padding-top: 75px;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.sidebar a {
+  display: inline-block;
+  width: 100%;
+}
+
+.sidebar li:hover {
+  background:#aaa;
+}

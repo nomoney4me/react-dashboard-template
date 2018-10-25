@@ -1,6 +1,8 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/styles.css';
+
 import { Col, Container, Row } from 'reactstrap';
 
 import Header from './Header';
@@ -13,16 +15,16 @@ export default () => {
   return (
     <Container fluid>
       <Row>
-        <Col>
+        <Col md={12} lg={12} className="header">
           <Header />
         </Col>
       </Row>
       <Row>
-        <Col lg={2}>
+        <Col md={2} lg={2} className="sidebar">
           <Sidebar />
         </Col>
 
-        <Col lg={10}>
+        <Col md={{ size: 10, offset: 2 }} lg={{ size: 10, offset: 2 }} className="content">
           <Dashboard />
         </Col>
       </Row>
